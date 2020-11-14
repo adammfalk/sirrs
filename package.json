@@ -1,0 +1,8 @@
+{
+  "name": "sirrs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adammfalk/sirrs.git",
+  "author": "Adam Falk <adammfalk@gmail.com>",
+  "license": "ACSL"
+}
