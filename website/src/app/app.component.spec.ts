@@ -46,7 +46,16 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.navbar-title').textContent).toBe('Society of Iowa Rugby Referees');
+    const app = fixture.componentInstance;
+    expect(compiled.querySelector('.navbar-title').textContent).toBe(app.title);
+  });
+
+  it('should have a footer with a junky copyright date', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    const app = fixture.componentInstance;
+    expect(compiled.querySelector('.footer-title').textContent).toBe(app.footerTitle())
   });
 
   it('should have the sidenav closed when it loads', async () => {

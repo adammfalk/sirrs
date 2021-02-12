@@ -2,9 +2,9 @@
     <mat-toolbar color="primary" class="navbar">
         <button mat-icon-button class="navbar-button" id="menu-button" aria-label="Main menu button"
             (click)="sidenav.toggle()">
-            <mat-icon>{{[menuIcon()]}}</mat-icon>
+            <mat-icon>{{ [menuIcon()] }}</mat-icon>
         </button>
-        <h1 class="navbar-title">Society of Iowa Rugby Referees</h1>
+        <h1 class="navbar-title">{{ title }}</h1>
         <span class="navbar-spacer"></span>
         <a mat-icon-button id="facebook-button" aria-label="Facebook link"
             href="https://www.facebook.com/iowarugbyrefs/" target="_blank">
@@ -21,7 +21,13 @@
         </mat-sidenav>
 
         <mat-sidenav-content>
-            {{[menuIcon()]}}
+            <p>eat my shorts</p>
         </mat-sidenav-content>
     </mat-sidenav-container>
+
+    <mat-toolbar color="primary" id="footer">
+        <span class="navbar-spacer"></span>
+        <p class="footer-title">{{ footerTitle() }}</p>
+        <span class="navbar-spacer"></span>
+    </mat-toolbar>
 </div>
