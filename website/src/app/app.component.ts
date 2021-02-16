@@ -9,7 +9,6 @@ import { MediaMatcher } from '@angular/cdk/layout';
 export class AppComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
   opened: boolean = false;
-  title = 'Society of Iowa Rugby Referees';
 
   private _mobileQueryListener: () => void;
 
@@ -23,15 +22,11 @@ export class AppComponent implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  menuIcon(): string {
-    if (this.opened) {
-      return 'close';
-    } else {
-      return 'menu';
-    }
+  onOpen(_x: any): void {
+    this.opened = true;
   }
 
-  footerTitle(): string {
-    return `© ${new Date().getFullYear()} ${this.title}`;
+  onClose(_x: any): void {
+    this.opened = false;
   }
 }
