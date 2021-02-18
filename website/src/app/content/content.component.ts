@@ -1,13 +1,13 @@
-import { Component, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectorRef, OnDestroy, Input } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-content',
+  templateUrl: './content.component.html',
+  styleUrls: ['./content.component.scss']
 })
-export class AppComponent implements OnDestroy {
-  public opened: Boolean;
+export class ContentComponent implements OnDestroy {
+  @Input() opened: Boolean;
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
@@ -22,7 +22,4 @@ export class AppComponent implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  onToggle(opened: Boolean) {
-    this.opened = opened;
-  }
 }

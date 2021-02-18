@@ -1,6 +1,6 @@
 import { HarnessLoader } from '@angular/cdk/testing';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
 
@@ -12,7 +12,7 @@ import { MatButtonHarness } from '@angular/material/button/testing';
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
   let loader: HarnessLoader;
-  let fixture;
+  let fixture: ComponentFixture<NavbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -37,7 +37,6 @@ describe('NavbarComponent', () => {
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(NavbarComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     const app = fixture.componentInstance;
@@ -54,5 +53,33 @@ describe('NavbarComponent', () => {
     const navbarLoader = await loader.getChildLoader('.navbar');
     const fb = await navbarLoader.getHarness(MatButtonHarness.with({ selector: '#facebook-button' }));
     expect(fb).toBeDefined();
+  });
+
+  it('should emit true from sidenav toggle when the button goes from menu to close', async () => {
+    spyOn(component.sideNavToggle, 'emit');
+    fixture.detectChanges();
+
+    component.menuIconName = 'menu';
+
+    const navbarLoader = await loader.getChildLoader('.navbar');
+    const menu = await navbarLoader.getHarness(MatButtonHarness.with({ selector: '#menu-button' }));
+    await menu.click();
+
+    expect(component.menuIconName).toBe('close');
+    expect(component.sideNavToggle.emit).toHaveBeenCalledWith(true);
+  });
+
+  it('should emit false from sidenav toggle when the button goes from close to menu', async () => {
+    spyOn(component.sideNavToggle, 'emit');
+    fixture.detectChanges();
+
+    component.menuIconName = 'close';
+
+    const navbarLoader = await loader.getChildLoader('.navbar');
+    const menu = await navbarLoader.getHarness(MatButtonHarness.with({ selector: '#menu-button' }));
+    await menu.click();
+
+    expect(component.menuIconName).toBe('menu');
+    expect(component.sideNavToggle.emit).toHaveBeenCalledWith(false);
   });
 });

@@ -1,6 +1,6 @@
 import { HarnessLoader } from '@angular/cdk/testing';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
 
@@ -9,7 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 describe('FooterComponent', () => {
   let component: FooterComponent;
   let loader: HarnessLoader;
-  let fixture;
+  let fixture: ComponentFixture<FooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

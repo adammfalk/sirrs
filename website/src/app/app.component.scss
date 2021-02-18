@@ -13,10 +13,11 @@
   z-index: 2;
 }
 
-.sidenav-container {
-  flex: 1;
+.content {
+  display: flex;
+  height: 100%;
 }
 
-.is-mobile .sidenav-container {
-  flex: 1 0 auto;
+.footer {
+  flex-shrink: 0;
 }

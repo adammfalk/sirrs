@@ -8,8 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class NavbarComponent implements OnInit {
   menuIconName = 'menu';
   title = 'Society of Iowa Rugby Referees';
-  @Output() open = new EventEmitter<any>();
-  @Output() close = new EventEmitter<any>();
+  @Output() sideNavToggle = new EventEmitter<Boolean>();
 
   constructor () { }
 
@@ -19,10 +18,10 @@ export class NavbarComponent implements OnInit {
   toggle(): void {
     if (this.menuIconName === 'menu') {
       this.menuIconName = 'close';
-      this.open.emit(null);
+      this.sideNavToggle.emit(true);
     } else {
       this.menuIconName = 'menu';
-      this.close.emit(null);
+      this.sideNavToggle.emit(false);
     }
   }
 

@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -13,8 +14,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
 import { HarnessLoader } from '@angular/cdk/testing';
-
-import { MatSidenavHarness } from '@angular/material/sidenav/testing';
 
 let loader: HarnessLoader;
 let fixture;
@@ -34,6 +33,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         NavbarComponent,
+        ContentComponent,
         FooterComponent
       ],
     }).compileComponents();
@@ -45,11 +45,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it('should have the sidenav closed when it loads', async () => {
-    const sidenav = await loader.getHarness(MatSidenavHarness);
-    const isOpen = await sidenav.isOpen();
-    expect(isOpen).toBeFalse();
   });
 });
