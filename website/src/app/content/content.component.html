@@ -9,7 +9,10 @@
                 <mat-icon>assignment</mat-icon><span class="nav-item">Assignments</span>
             </a>
             <a mat-list-item routerLink="/directory" (click)="closeNav()">
-                <mat-icon>contact_page</mat-icon><span class="nav-item">Direcotry</span>
+                <mat-icon>contact_page</mat-icon><span class="nav-item">Directory</span>
+            </a>
+            <a mat-list-item routerLink="/fees" (click)="closeNav()">
+                <mat-icon>paid</mat-icon><span class="nav-item">Fees</span>
             </a>
             <a mat-list-item [matMenuTriggerFor]="reports">
                 <mat-icon>content_paste</mat-icon><span class="nav-item">Reports</span>
@@ -22,29 +25,26 @@
             </a>
         </mat-nav-list>
         <mat-menu #reports="matMenu" xPosition="before">
-            <a mat-menu-item routerLink="/match-reports">
+            <a mat-menu-item routerLink="/match-reports" (click)="closeNav()">
                 <mat-icon>assignment_turned_in</mat-icon><span class="nav-item">Match</span>
             </a>
-            <a mat-menu-item routerLink="/coach-reports">
+            <a mat-menu-item routerLink="/coach-reports" (click)="closeNav()">
                 <mat-icon>assignment_ind</mat-icon><span class="nav-item">Coach</span>
             </a>
-            <a mat-menu-item routerLink="/referee-abuse-reports">
+            <a mat-menu-item routerLink="/referee-abuse-reports" (click)="closeNav()">
                 <mat-icon>assignment_late</mat-icon><span class="nav-item">Referee Abuse</span>
             </a>
         </mat-menu>
         <mat-menu #resources="matMenu" xPosition="before">
-            <a mat-menu-item routerLink="/fees">
-                <mat-icon>paid</mat-icon><span class="nav-item">Fees</span>
-            </a>
-            <a mat-menu-item>
+            <a mat-menu-item (click)="closeNav()">
                 <mat-icon>sports</mat-icon><span class="nav-item">Referees</span>
             </a>
-            <a mat-menu-item>
+            <a mat-menu-item (click)="closeNav()">
                 <mat-icon>sports_rugby</mat-icon><span class="nav-item">Clubs</span>
             </a>
         </mat-menu>
         <mat-menu #societyInfo="matMenu" xPosition="before">
-            <a mat-menu-item routerLink="/officers">
+            <a mat-menu-item routerLink="/officers" (click)="closeNav()">
                 <mat-icon>supervisor_account</mat-icon><span class="nav-item">Officers</span>
             </a>
         </mat-menu>
