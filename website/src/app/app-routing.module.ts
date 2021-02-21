@@ -12,7 +12,7 @@ import { SocietyInformationComponent } from './society-information/society-infor
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'assignments', component: AssignmentsComponent },
-  { path: 'direcorty', component: DirectoryComponent },
+  { path: 'directory', component: DirectoryComponent },
   { path: 'match-reports', component: MatchReportsComponent },
   { path: 'officers', component: OfficersComponent },
   { path: 'resources', component: ResourcesComponent },

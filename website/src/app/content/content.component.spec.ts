@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ContentComponent } from './content.component';
 
+import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
@@ -20,6 +21,7 @@ describe('ContentComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         BrowserAnimationsModule,
+        MatIconModule,
         MatListModule,
         MatSidenavModule,
         RouterTestingModule
@@ -49,7 +51,7 @@ describe('ContentComponent', () => {
     expect(isOpen).toBeTrue();
   });
 
-  it('schould close the sidenav when the opened prop is changed to false', async () => {
+  it('should close the sidenav when the opened prop is changed to false', async () => {
     fixture.componentInstance.opened = true;
     let sidenav = await loader.getHarness(MatSidenavHarness);
     let isOpen = await sidenav.isOpen();
@@ -59,5 +61,9 @@ describe('ContentComponent', () => {
     sidenav = await loader.getHarness(MatSidenavHarness);
     isOpen = await sidenav.isOpen();
     expect(isOpen).toBeFalse();
+  });
+
+  it('should have the right number of nav options', async () => {
+    expect(fixture.componentInstance.navList.length).toBe(7);
   });
 });
