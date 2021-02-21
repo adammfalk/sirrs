@@ -37,9 +37,14 @@ describe('NavbarComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render title', () => {
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.navbar-title').textContent).toBe(component.title);
+  it('should render default title on desktop', () => {
+    component.isMobile = false;
+    expect(component.title()).toBe('Society of Iowa Rugby Referees');
+  });
+
+  it('should render mobile title on mobile', () => {
+    component.isMobile = true;
+    expect(component.title()).toBe('mobile');
   });
 
   it('should have a menu button', async () => {

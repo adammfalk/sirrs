@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,13 +6,20 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  menuIconName = 'menu';
-  title = 'Society of Iowa Rugby Referees';
+  @Input() isMobile: Boolean;
   @Output() sideNavToggle = new EventEmitter<Boolean>();
+
+  menuIconName = 'menu';
 
   constructor () { }
 
   ngOnInit(): void {
+  }
+
+  title(): string {
+    const defaultTitle = 'Society of Iowa Rugby Referees';
+    const mobileTitle = 'S.I.R.R.';
+    return (this.isMobile) ? mobileTitle : defaultTitle;
   }
 
   // toggles the menu from a click on the button

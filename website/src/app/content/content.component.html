@@ -1,6 +1,6 @@
-<mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 64">
-    <mat-sidenav #sidenav id="sidenav" [mode]="mobileQuery.matches ? 'over' : 'side'" [(opened)]="opened"
-        [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+<mat-sidenav-container class="sidenav-container" [style.marginTop.px]="isMobile ? 56 : 64">
+    <mat-sidenav #sidenav id="sidenav" [mode]="isMobile ? 'over' : 'side'" [(opened)]="opened"
+        [fixedInViewport]="isMobile" fixedTopGap="56" (closed)="closeNav()">
         <mat-nav-list>
             <div *ngFor="let nav of navList">
                 <a mat-list-item routerLink={{nav.link}} (click)="closeNav()">

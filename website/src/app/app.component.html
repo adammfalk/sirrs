@@ -1,7 +1,8 @@
 <div class="container" [class.is-mobile]="mobileQuery.matches">
-    <app-navbar (sideNavToggle)="onToggle($event)"></app-navbar>
+    <app-navbar [isMobile]="mobileQuery.matches" (sideNavToggle)="onToggle($event)"></app-navbar>
 
-    <app-content class="content" [opened]="opened" (closeSideNav)="onClose($event)"></app-content>
+    <app-content class="content" [opened]="opened" [isMobile]="mobileQuery.matches" (closeSideNav)="onClose($event)">
+    </app-content>
 
     <app-footer class="footer"></app-footer>
 </div>

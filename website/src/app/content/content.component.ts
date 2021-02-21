@@ -1,26 +1,16 @@
-import { Component, ChangeDetectorRef, OnDestroy, Input, EventEmitter, Output } from '@angular/core';
-import { MediaMatcher } from '@angular/cdk/layout';
+import { Component, Input, EventEmitter, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss']
 })
-export class ContentComponent implements OnDestroy {
+export class ContentComponent implements OnInit {
   @Input() opened: Boolean;
+  @Input() isMobile: Boolean;
   @Output() closeSideNav = new EventEmitter<null>();
-  mobileQuery: MediaQueryList;
 
-  private _mobileQueryListener: () => void;
-
-  constructor (changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
-    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
-  }
-
-  ngOnDestroy(): void {
-    this.mobileQuery.removeListener(this._mobileQueryListener);
+  ngOnInit(): void {
   }
 
   closeNav(): void {
