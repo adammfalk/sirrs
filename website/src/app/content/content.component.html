@@ -2,12 +2,52 @@
     <mat-sidenav #sidenav id="sidenav" [mode]="isMobile ? 'over' : 'side'" [(opened)]="opened"
         [fixedInViewport]="isMobile" fixedTopGap="56" (closed)="closeNav()">
         <mat-nav-list>
-            <div *ngFor="let nav of navList">
-                <a mat-list-item routerLink={{nav.link}} (click)="closeNav()">
-                    <mat-icon>{{nav.iconName}}</mat-icon><span class="nav-item">{{nav.name}}</span>
-                </a>
-            </div>
+            <a mat-list-item routerLink="/home" (click)="closeNav()">
+                <mat-icon>home</mat-icon><span class="nav-item">Home</span>
+            </a>
+            <a mat-list-item routerLink="/assignments" (click)="closeNav()">
+                <mat-icon>assignment</mat-icon><span class="nav-item">Assignments</span>
+            </a>
+            <a mat-list-item routerLink="/directory" (click)="closeNav()">
+                <mat-icon>contact_page</mat-icon><span class="nav-item">Direcotry</span>
+            </a>
+            <a mat-list-item [matMenuTriggerFor]="reports">
+                <mat-icon>content_paste</mat-icon><span class="nav-item">Reports</span>
+            </a>
+            <a mat-list-item [matMenuTriggerFor]="resources">
+                <mat-icon>room_service</mat-icon><span class="nav-item">Resources</span>
+            </a>
+            <a mat-list-item [matMenuTriggerFor]="societyInfo">
+                <mat-icon>info</mat-icon><span class="nav-item">Society Information</span>
+            </a>
         </mat-nav-list>
+        <mat-menu #reports="matMenu" xPosition="before">
+            <a mat-menu-item routerLink="/match-reports">
+                <mat-icon>assignment_turned_in</mat-icon><span class="nav-item">Match</span>
+            </a>
+            <a mat-menu-item routerLink="/coach-reports">
+                <mat-icon>assignment_ind</mat-icon><span class="nav-item">Coach</span>
+            </a>
+            <a mat-menu-item routerLink="/referee-abuse-reports">
+                <mat-icon>assignment_late</mat-icon><span class="nav-item">Referee Abuse</span>
+            </a>
+        </mat-menu>
+        <mat-menu #resources="matMenu" xPosition="before">
+            <a mat-menu-item routerLink="/fees">
+                <mat-icon>paid</mat-icon><span class="nav-item">Fees</span>
+            </a>
+            <a mat-menu-item>
+                <mat-icon>sports</mat-icon><span class="nav-item">Referees</span>
+            </a>
+            <a mat-menu-item>
+                <mat-icon>sports_rugby</mat-icon><span class="nav-item">Clubs</span>
+            </a>
+        </mat-menu>
+        <mat-menu #societyInfo="matMenu" xPosition="before">
+            <a mat-menu-item routerLink="/officers">
+                <mat-icon>supervisor_account</mat-icon><span class="nav-item">Officers</span>
+            </a>
+        </mat-menu>
     </mat-sidenav>
 
     <mat-sidenav-content>

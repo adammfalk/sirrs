@@ -44,7 +44,7 @@ describe('NavbarComponent', () => {
 
   it('should render mobile title on mobile', () => {
     component.isMobile = true;
-    expect(component.title()).toBe('mobile');
+    expect(component.title()).toBe('S.I.R.R.');
   });
 
   it('should have a menu button', async () => {

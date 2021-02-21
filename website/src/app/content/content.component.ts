@@ -17,14 +17,4 @@ export class ContentComponent implements OnInit {
     this.opened = false;
     this.closeSideNav.emit(null);
   }
-
-  navList = [
-    { name: 'Home', iconName: 'home', link: '/home' },
-    { name: 'Assignments', iconName: 'assignment', link: '/assignments' },
-    { name: 'Directory', iconName: 'contact_page', link: '/directory' },
-    { name: 'Match Reports', iconName: 'assignment_turned_in', link: '/match-reports' },
-    { name: 'Resources', iconName: 'room_service', link: '/resources' },
-    { name: 'Society Information', iconName: 'info', link: '/society-information' },
-    { name: 'Officers', iconName: 'supervisor_account', link: '/officers' }
-  ];
 }

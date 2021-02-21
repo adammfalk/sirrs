@@ -8,8 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,6 +22,7 @@ import { OfficersComponent } from './officers/officers.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { MatchReportsComponent } from './match-reports/match-reports.component';
+import { FeesComponent } from './fees/fees.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { MatchReportsComponent } from './match-reports/match-reports.component';
     OfficersComponent,
     SocietyInformationComponent,
     DirectoryComponent,
-    MatchReportsComponent
+    MatchReportsComponent,
+    FeesComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +46,7 @@ import { MatchReportsComponent } from './match-reports/match-reports.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
+    MatMenuModule,
     MatSidenavModule,
     MatToolbarModule
   ],

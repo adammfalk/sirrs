@@ -8,6 +8,7 @@ import { ContentComponent } from './content.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { MatSidenavHarness } from '@angular/material/sidenav/testing';
@@ -23,6 +24,7 @@ describe('ContentComponent', () => {
         BrowserAnimationsModule,
         MatIconModule,
         MatListModule,
+        MatMenuModule,
         MatSidenavModule,
         RouterTestingModule
       ],
@@ -61,9 +63,5 @@ describe('ContentComponent', () => {
     sidenav = await loader.getHarness(MatSidenavHarness);
     isOpen = await sidenav.isOpen();
     expect(isOpen).toBeFalse();
-  });
-
-  it('should have the right number of nav options', async () => {
-    expect(fixture.componentInstance.navList.length).toBe(7);
   });
 });
