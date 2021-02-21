@@ -37,10 +37,8 @@ describe('NavbarComponent', () => {
   });
 
   it('should render title', () => {
-    fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    const app = fixture.componentInstance;
-    expect(compiled.querySelector('.navbar-title').textContent).toBe(app.title);
+    expect(compiled.querySelector('.navbar-title').textContent).toBe(component.title);
   });
 
   it('should have a menu button', async () => {
@@ -57,7 +55,6 @@ describe('NavbarComponent', () => {
 
   it('should emit true from sidenav toggle when the button goes from menu to close', async () => {
     spyOn(component.sideNavToggle, 'emit');
-    fixture.detectChanges();
 
     component.menuIconName = 'menu';
 
@@ -71,7 +68,6 @@ describe('NavbarComponent', () => {
 
   it('should emit false from sidenav toggle when the button goes from close to menu', async () => {
     spyOn(component.sideNavToggle, 'emit');
-    fixture.detectChanges();
 
     component.menuIconName = 'close';
 

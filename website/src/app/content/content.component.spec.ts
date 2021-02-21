@@ -48,4 +48,16 @@ describe('ContentComponent', () => {
     const isOpen = await sidenav.isOpen();
     expect(isOpen).toBeTrue();
   });
+
+  it('schould close the sidenav when the opened prop is changed to false', async () => {
+    fixture.componentInstance.opened = true;
+    let sidenav = await loader.getHarness(MatSidenavHarness);
+    let isOpen = await sidenav.isOpen();
+    expect(isOpen).toBeTrue();
+
+    fixture.componentInstance.opened = false;
+    sidenav = await loader.getHarness(MatSidenavHarness);
+    isOpen = await sidenav.isOpen();
+    expect(isOpen).toBeFalse();
+  });
 });
