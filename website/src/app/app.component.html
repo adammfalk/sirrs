@@ -1,5 +1,5 @@
 <div class="container" [class.is-mobile]="mobileQuery.matches">
-    <app-navbar (sideNavToggle)="onToggle(opened)"></app-navbar>
+    <app-navbar (sideNavToggle)="onToggle($event)"></app-navbar>
 
     <app-content class="content" [opened]="opened"></app-content>
 

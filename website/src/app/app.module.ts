@@ -14,6 +14,12 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { OfficersComponent } from './officers/officers.component';
+import { SocietyInformationComponent } from './society-information/society-information.component';
+import { DirectoryComponent } from './directory/directory.component';
+import { MatchReportsComponent } from './match-reports/match-reports.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { ContentComponent } from './content/content.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    ResourcesComponent,
+    AssignmentsComponent,
+    OfficersComponent,
+    SocietyInformationComponent,
+    DirectoryComponent,
+    MatchReportsComponent
   ],
   imports: [
     BrowserModule,
