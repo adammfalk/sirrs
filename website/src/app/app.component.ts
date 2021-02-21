@@ -1,5 +1,6 @@
-import { Component, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Component, ChangeDetectorRef, OnDestroy, ViewChild } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { MediaMatcher } from '@angular/cdk/layout';
 })
 export class AppComponent implements OnDestroy {
   public opened: Boolean;
+  @ViewChild(NavbarComponent) navbar: NavbarComponent;
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
@@ -24,5 +26,10 @@ export class AppComponent implements OnDestroy {
 
   onToggle(opened: Boolean) {
     this.opened = opened;
+  }
+
+  onClose(close: null) {
+    this.opened = false;
+    this.navbar.close();
   }
 }

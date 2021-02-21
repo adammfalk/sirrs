@@ -2,7 +2,7 @@
     <mat-sidenav #sidenav id="sidenav" [mode]="mobileQuery.matches ? 'over' : 'side'" [(opened)]="opened"
         [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
         <mat-nav-list>
-            <a mat-list-item>hiiiiiiiiiiiiiiiiiiiii</a>
+            <a mat-list-item routerLink="/society-information" (click)="closeNav()">Society Information</a>
         </mat-nav-list>
     </mat-sidenav>
 

@@ -1,6 +1,7 @@
 import { HarnessLoader } from '@angular/cdk/testing';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Location } from '@angular/common';
 
 import { NavbarComponent } from './navbar.component';
 
@@ -47,6 +48,12 @@ describe('NavbarComponent', () => {
     expect(menu).toBeDefined();
   });
 
+  it('should have a button on the title', async () => {
+    const navbarLoader = await loader.getChildLoader('.navbar');
+    const title = await navbarLoader.getHarness(MatButtonHarness.with({ selector: '#title-button' }));
+    expect(title).toBeDefined();
+  });
+
   it('should have a facebook button on the navbar', async () => {
     const navbarLoader = await loader.getChildLoader('.navbar');
     const fb = await navbarLoader.getHarness(MatButtonHarness.with({ selector: '#facebook-button' }));
@@ -77,5 +84,24 @@ describe('NavbarComponent', () => {
 
     expect(component.menuIconName).toBe('menu');
     expect(component.sideNavToggle.emit).toHaveBeenCalledWith(false);
+  });
+
+  it('should reset to menu and send a close call when closeAll is called', async () => {
+    spyOn(component.sideNavToggle, 'emit');
+    spyOn(component, 'close');
+
+    component.closeAll();
+
+    expect(component.menuIconName).toBe('menu');
+    expect(component.sideNavToggle.emit).toHaveBeenCalledWith(false);
+    expect(component.close).toHaveBeenCalled();
+  });
+
+  it('should have called closeAll when goHome is called', async () => {
+    spyOn(component, 'closeAll');
+
+    component.goHome();
+
+    expect(component.closeAll).toHaveBeenCalled();
   });
 });

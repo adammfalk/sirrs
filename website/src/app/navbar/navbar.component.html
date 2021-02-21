@@ -2,7 +2,9 @@
     <button mat-icon-button class="navbar-button" id="menu-button" aria-label="Main menu button" (click)="toggle()">
         <mat-icon>{{ [menuIcon()] }}</mat-icon>
     </button>
-    <h1 class="navbar-title">{{ title }}</h1>
+    <a mat-button routerLink="/home" id="title-button" (click)="goHome()">
+        <h1 class="navbar-title" routerLink="/home" (click)="goHome()">{{ title }}</h1>
+    </a>
     <span class="navbar-spacer"></span>
     <a mat-icon-button id="facebook-button" aria-label="Facebook link" href="https://www.facebook.com/iowarugbyrefs/"
         target="_blank">

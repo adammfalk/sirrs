@@ -1,4 +1,4 @@
-import { Component, ChangeDetectorRef, OnDestroy, Input } from '@angular/core';
+import { Component, ChangeDetectorRef, OnDestroy, Input, EventEmitter, Output } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
@@ -8,6 +8,7 @@ import { MediaMatcher } from '@angular/cdk/layout';
 })
 export class ContentComponent implements OnDestroy {
   @Input() opened: Boolean;
+  @Output() closeSideNav = new EventEmitter<null>();
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
@@ -20,6 +21,11 @@ export class ContentComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  closeNav(): void {
+    this.opened = false;
+    this.closeSideNav.emit(null);
   }
 
 }
