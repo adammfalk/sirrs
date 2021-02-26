@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -23,6 +24,7 @@ import { SocietyInformationComponent } from './society-information/society-infor
 import { DirectoryComponent } from './directory/directory.component';
 import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { FeesComponent } from './fees/fees.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +39,15 @@ import { FeesComponent } from './fees/fees.component';
     SocietyInformationComponent,
     DirectoryComponent,
     MatchReportsComponent,
-    FeesComponent
+    FeesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatCardModule,
     MatIconModule,
     MatListModule,
     MatMenuModule,
