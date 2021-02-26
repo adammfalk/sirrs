@@ -1,5 +1,4 @@
-import markdownpdf from 'markdown-pdf';
-import fs from 'fs';
+const markdownpdf = require('markdown-pdf');
 
 const dist = './dist/';
 const readme = 'README.MD';
@@ -13,7 +12,14 @@ files.forEach(file => {
 });
 
 function createPdf(src, out) {
-    fs.createReadStream(src)
-        .pipe(markdownpdf())
-        .pipe(fs.createWriteStream(out));
+    markdownpdf({
+        cssPath: './style.css',
+        remarkable: {
+            //linkify: true,
+        }
+    })
+        .from(src)
+        .to(out, function () {
+            console.log(`created ${out}`);
+        });
 }
