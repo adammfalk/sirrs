@@ -7,6 +7,8 @@
   "license": "ACSL",
   "scripts": {
     "website-build": "cd website && yarn install",
-    "website-test": "cd website && yarn run test:ci"
+    "website-test": "cd website && yarn run test:ci",
+    "docs-build": "cd society-docs && yarn install",
+    "docs-run": "cd society-docs && node index.js"
   }
 }
