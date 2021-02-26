@@ -102,3 +102,5 @@ The most important benefit of membership in the Society is the continued enjoyme
 ## Article X. Amendment
 
 These by-laws may be amended by a majority vote of the members at any time.
+
+[source](https://github.com/adammfalk/sirrs/society-docs/bylaws/README.md)
