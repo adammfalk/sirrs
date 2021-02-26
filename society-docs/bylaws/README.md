@@ -24,7 +24,7 @@ The name of the organization shall be Society of Iowa Rugby Referees.
 (c) Appointments Officer (AO) shall chair the appointments committee and be responsible for assigning referees to matches convened by the IARFU.
 (d) The Development Officer (DO) shall chair the development committee of the Society. In 2006 the Referee and Laws Committee of USA Rugby committed to the mission, as expressed in the USA Rugby Strategic Plan, of making rugby the best experience in American sport. The committee recognizes the critical role referees and match officials must play to insure the realization of this ideal.
 Fundamental to the mission is the strategy of "developing new pathways to manage the progression of referees at all levels". The DO continually conducts a research and analysis process to identify, evaluate and develop referees with potential at all levels. This process requires the involvement and partnership of the local and territorial trainers, coaches, evaluators, and managers associated with these referees.
-(e) The Treasurer shall keep record of the Society budget and prepare financial reports as needed. He shall pay bills subject to [Article VIII](##-article-viii).
+(e) The Treasurer shall keep record of the Society budget and prepare financial reports as needed. He shall pay bills subject to [Article VIII](##-article-viii.-fiscal-policies).
 (f) The immediate past president serves as an advisor to the Board and has voting rights.
 
 ## Article IV. Membership
