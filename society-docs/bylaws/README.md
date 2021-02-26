@@ -11,8 +11,11 @@ The name of the organization shall be Society of Iowa Rugby Referees.
 ## Article II. Officers
 
 (a) The elected officers of the Society are the President, Secretary, Appointments Officer and Treasurer.
+
 (b) Together with the immediate past president they are the Board.
+
 (c) Board members are elected to serve one (1) two year term.
+
 (d) The election of the President, Secretary and Appointments Officer will occur in the odd year. The election of the Appointments Officer and Treasurer will occur in the even year.
 (e) Board members may resign by notifying the Board in writing.
 (f) The Board may fill vacancies as needed.
