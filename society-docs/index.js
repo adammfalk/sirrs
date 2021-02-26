@@ -1,10 +1,11 @@
 const markdownpdf = require('markdown-pdf');
 
-const dist = './dist/';
+const dist = './society-docs/dist/';
 const readme = 'README.MD';
 
+// TODO: make this dynamic so i don't have to add each one individually
 const files = [
-    { input: `./bylaws/${readme}`, output: `${dist}bylaws.pdf` },
+    { input: `./society-docs/bylaws/${readme}`, output: `${dist}bylaws.pdf` },
 ];
 
 files.forEach(file => {
