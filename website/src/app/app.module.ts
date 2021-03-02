@@ -25,6 +25,7 @@ import { DirectoryComponent } from './directory/directory.component';
 import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { FeesComponent } from './fees/fees.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CovidInfoComponent } from './covid-info/covid-info.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     DirectoryComponent,
     MatchReportsComponent,
     FeesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CovidInfoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 export const paths = {
+    covidInfo: 'covid-info',
     assignments: 'assignments',
     content: 'content',
     directory: 'directory',

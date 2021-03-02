@@ -11,16 +11,18 @@ import { OfficersComponent } from './officers/officers.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CovidInfoComponent } from './covid-info/covid-info.component';
 
 export const routes: Routes = [
   { path: paths.home, component: HomeComponent },
-  { path: paths.assignments, component: AssignmentsComponent },
-  { path: paths.fees, component: FeesComponent },
-  { path: paths.directory, component: DirectoryComponent },
-  { path: paths.matchReports, component: MatchReportsComponent },
-  { path: paths.officers, component: OfficersComponent },
-  { path: paths.resources, component: ResourcesComponent },
-  { path: paths.societyInformation, component: SocietyInformationComponent },
+  { path: paths.covidInfo, component: CovidInfoComponent },
+  //{ path: paths.assignments, component: AssignmentsComponent },
+  //{ path: paths.fees, component: FeesComponent },
+  //{ path: paths.directory, component: DirectoryComponent },
+  //{ path: paths.matchReports, component: MatchReportsComponent },
+  //{ path: paths.officers, component: OfficersComponent },
+  //{ path: paths.resources, component: ResourcesComponent },
+  //{ path: paths.societyInformation, component: SocietyInformationComponent },
   { path: paths.empty, redirectTo: path(paths.home), pathMatch: 'full' },
   // TODO: smart 404? https://medium.com/angular-in-depth/angular-smart-404-page-85a45b109fd8
   { path: '**', component: NotFoundComponent }
