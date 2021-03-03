@@ -5,6 +5,9 @@
             <a mat-list-item routerLink="/home" (click)="closeNav()">
                 <mat-icon>home</mat-icon><span class="nav-item">Home</span>
             </a>
+            <a mat-list-item routerLink="/covid-info" (click)="closeNav()" style="color: red;">
+                <mat-icon>coronavirus</mat-icon><span class="nav-item">COVID-19 Information</span>
+            </a>
             <a mat-list-item routerLink="/assignments" (click)="closeNav()">
                 <mat-icon>assignment</mat-icon><span class="nav-item">Assignments</span>
             </a>
@@ -50,7 +53,7 @@
         </mat-menu>
     </mat-sidenav>
 
-    <mat-sidenav-content>
+    <mat-sidenav-content class="sidenav-content">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
