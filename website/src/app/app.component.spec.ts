@@ -9,6 +9,7 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -30,6 +31,8 @@ describe('AppComponent', () => {
         BrowserAnimationsModule,
         RouterTestingModule,
         MatButtonModule,
+        MatCardModule,
+        MatIconModule,
         MatListModule,
         MatMenuModule,
         MatSidenavModule,

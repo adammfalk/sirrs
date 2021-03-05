@@ -7,6 +7,7 @@ export const paths = {
     home: 'home',
     matchReports: 'match-reports',
     officers: 'officers',
+    refereeResources: 'referee-resources',
     resources: 'resources',
     societyInformation: 'society-information',
     empty: ''

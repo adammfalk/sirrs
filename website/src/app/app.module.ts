@@ -28,6 +28,7 @@ import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { FeesComponent } from './fees/fees.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CovidInfoComponent } from './covid-info/covid-info.component';
+import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CovidInfoComponent } from './covid-info/covid-info.component';
     MatchReportsComponent,
     FeesComponent,
     NotFoundComponent,
-    CovidInfoComponent
+    CovidInfoComponent,
+    RefereeResourcesComponent
   ],
   imports: [
     BrowserModule,

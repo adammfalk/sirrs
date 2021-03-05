@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
 
   title(): string {
     const defaultTitle = 'Society of Iowa Rugby Referees';
-    const mobileTitle = 'S.I.R.R.';
+    const mobileTitle = 'Soc. of IA Rugby Refs';
     return (this.isMobile) ? mobileTitle : defaultTitle;
   }
 

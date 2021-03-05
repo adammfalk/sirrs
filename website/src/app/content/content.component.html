@@ -11,7 +11,7 @@
             <a mat-list-item routerLink="/assignments" (click)="closeNav()">
                 <mat-icon>assignment</mat-icon><span class="nav-item">Assignments</span>
             </a>
-            <a mat-list-item routerLink="/directory" (click)="closeNav()">
+            <!--<a mat-list-item routerLink="/directory" (click)="closeNav()">
                 <mat-icon>contact_page</mat-icon><span class="nav-item">Directory</span>
             </a>
             <a mat-list-item routerLink="/fees" (click)="closeNav()">
@@ -19,7 +19,7 @@
             </a>
             <a mat-list-item [matMenuTriggerFor]="reports">
                 <mat-icon>content_paste</mat-icon><span class="nav-item">Reports</span>
-            </a>
+            </a>-->
             <a mat-list-item [matMenuTriggerFor]="resources">
                 <mat-icon>room_service</mat-icon><span class="nav-item">Resources</span>
             </a>
@@ -39,12 +39,12 @@
             </a>
         </mat-menu>
         <mat-menu #resources="matMenu" xPosition="before">
-            <a mat-menu-item (click)="closeNav()">
+            <a mat-menu-item (click)="closeNav()" routerLink="/referee-resources">
                 <mat-icon>sports</mat-icon><span class="nav-item">Referees</span>
             </a>
-            <a mat-menu-item (click)="closeNav()">
+            <!--<a mat-menu-item (click)="closeNav()">
                 <mat-icon>sports_rugby</mat-icon><span class="nav-item">Clubs</span>
-            </a>
+            </a>-->
         </mat-menu>
         <mat-menu #societyInfo="matMenu" xPosition="before">
             <a mat-menu-item routerLink="/officers" (click)="closeNav()">
