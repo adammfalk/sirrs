@@ -8,6 +8,9 @@
   "scripts": {
     "website-install": "cd website && yarn install",
     "website-build-ghp": "cd website && yarn run build:ghp",
-    "website-test": "cd website && yarn run test:ci"
+    "website-test": "cd website && yarn run test:ci",
+    "docs-build": "cd ./society-docs && yarn install",
+    "docs-run": "node ./society-docs/index.js",
+    "docs-cleanup": "rm -r ./society-docs/dist"
   }
 }
