@@ -6,7 +6,8 @@
   "author": "Adam Falk <adammfalk@gmail.com>",
   "license": "ACSL",
   "scripts": {
-    "website-build": "cd website && yarn install",
+    "website-install": "cd website && yarn install",
+    "website-build-ghp": "cd website && ng build --prod",
     "website-test": "cd website && yarn run test:ci"
   }
 }
