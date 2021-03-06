@@ -7,7 +7,7 @@
   "license": "ACSL",
   "scripts": {
     "website-install": "cd website && yarn install",
-    "website-build": "cd website && yarn build --prod",
+    "website-build-ghp": "cd website && yarn build build:ghp",
     "website-test": "cd website && yarn run test:ci"
   }
 }

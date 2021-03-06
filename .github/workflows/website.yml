@@ -42,7 +42,7 @@ jobs:
 
       - name: Website build
         if: success()
-        run: yarn run website-build
+        run: yarn run website-build-ghp
 
       - name: Archive build
         if: success()
@@ -67,4 +67,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist
+          FOLDER: deploy_dist/sirrs-website
