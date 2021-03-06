@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/adammfalk/sirrs.git",
   "author": "Adam Falk <adammfalk@gmail.com>",
-  "license": "ACSL"
+  "license": "ACSL",
+  "scripts": {
+    "website-install": "cd website && yarn install",
+    "website-build-ghp": "cd website && yarn run build:ghp",
+    "website-test": "cd website && yarn run test:ci"
+  }
 }
