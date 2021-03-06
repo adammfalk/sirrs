@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ghp": "ng build --prod --base-href=/sirrs/",
+    "build:ghp": "ng build --prod --base-href=/sirrs/ --deploy-url=https://adammfalk.github.io/sirrs/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
