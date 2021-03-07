@@ -1,5 +1,11 @@
 # Society of Iowa Rugby Referees Bylaws
 
+<p align="center">
+    <img src="../../bylaws/seal.png" alt="society of iowa rugby referees crest or symbol">
+</p>
+
+![society of iowa rugby referee crest](https://github.com/adammfalk/sirrs/tree/main/society-docs/bylaws/seal.png)
+
 ### Mission Statement
 
 The Society of Iowa Rugby Referees (aka the Society, aka SIRRS, aka SIRRs, aka SIRR) is committed to ensuring a safe and enjoyable environment for the game of Rugby Union. The Society's members acknowledge that they participate in an organization that provides a service to the Iowa Rugby Football Union (IARFU) or any neighboring union that requests its services, and pledge to referee each match fairly and impartially within the laws of the game. The Society also pledges to recruit, develop and promote referees through clinics, meetings, certification courses, peer, coach and player feedback, as well as formal evaluation and coaching. The Society's goal is to encourage referees to promote the game of rugby in a positive way by their actions on and off the field.
