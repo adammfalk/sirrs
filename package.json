@@ -12,6 +12,7 @@
     "website-test": "cd website && yarn run test:ci",
     "docs-build": "cd ./society-docs && yarn install",
     "docs-run": "node ./society-docs/index.js",
+    "docs-deploy": "cp -r ./society-docs/dist ./website/src/assets",
     "docs-cleanup": "rm -r ./society-docs/dist"
   }
 }
