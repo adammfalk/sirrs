@@ -44,8 +44,8 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-server: ftp://ftp.iowarefs.rugby
-          ftp-username: deploye@iowarefs.rugby
-          ftp-password: ${{ secrets.FTP_DEPLOY_PW }}
-          ftp-port: 21
-          ftp-local-dir: website/dist/sirrs-website
+          server: ftp://ftp.iowarefs.rugby
+          username: deploye@iowarefs.rugby
+          password: ${{ secrets.FTP_DEPLOY_PW }}
+          port: 21
+          local-dir: website/dist/sirrs-website
