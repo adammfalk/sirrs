@@ -48,4 +48,4 @@ jobs:
           username: deploye@iowarefs.rugby
           password: ${{ secrets.FTP_DEPLOY_PW }}
           port: 21
-          local-dir: website/dist/sirrs-website
+          local-dir: website/dist/sirrs-website/
