@@ -1,9 +1,10 @@
 name: Website CD
 
 on:
-  release:
-    types:
-      - published
+  push
+  #release:
+  #  types:
+  #    - published
 
 jobs:
   release:
@@ -41,11 +42,13 @@ jobs:
         if: success()
         run: yarn run website-build
 
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ftp://ftp.iowarefs.rugby
-          username: deploye@iowarefs.rugby
-          password: ${{ secrets.FTP_DEPLOY_PW }}
-          port: 21
-          local-dir: website/dist/sirrs-website/
+      - name: tst
+        run: echo "dir"
+      #- name: FTP-Deploy-Action
+      #  uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #  with:
+      #    server: ftp://ftp.iowarefs.rugby
+      #    username: deploye@iowarefs.rugby
+      #    password: ${{ secrets.FTP_DEPLOY_PW }}
+      #    port: 21
+      #    local-dir: website/dist/sirrs-website/
