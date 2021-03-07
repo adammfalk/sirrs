@@ -43,7 +43,7 @@ jobs:
         run: yarn run website-build
 
       - name: tst
-        run: echo "dir"
+        run: dir
       #- name: FTP-Deploy-Action
       #  uses: SamKirkland/FTP-Deploy-Action@4.0.0
       #  with:
