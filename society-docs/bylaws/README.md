@@ -1,7 +1,7 @@
 # Society of Iowa Rugby Referees Bylaws
 
 <p align="center">
-    <img src="../../bylaws/seal.png" alt="society of iowa rugby referees crest or symbol">
+    <img src="https://github.com/adammfalk/sirrs/blob/main/society-docs/bylaws/seal.png" alt="society of iowa rugby referees crest or symbol">
 </p>
 
 ![society of iowa rugby referee crest](https://github.com/adammfalk/sirrs/blob/main/society-docs/bylaws/seal.png)
