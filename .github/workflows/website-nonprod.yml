@@ -32,9 +32,6 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install
-        run: yarn install
-
       - name: Website install
         run: yarn run website-install
 

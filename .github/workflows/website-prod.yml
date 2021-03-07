@@ -1,10 +1,9 @@
 name: Website CD
 
 on:
-  push
-  #release:
-  #  types:
-  #    - published
+  release:
+    types:
+      - published
 
 jobs:
   release:
@@ -32,9 +31,6 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install
-        run: yarn install
-
       - name: Website install
         run: yarn run website-install
 
@@ -44,11 +40,11 @@ jobs:
 
       - name: tst
         run: cd website&& dir
-      #- name: FTP-Deploy-Action
-      #  uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      #  with:
-      #    server: ftp://ftp.iowarefs.rugby
-      #    username: deploye@iowarefs.rugby
-      #    password: ${{ secrets.FTP_DEPLOY_PW }}
-      #    port: 21
-      #    local-dir: website/dist/sirrs-website/
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp://ftp.iowarefs.rugby
+          username: deploye@iowarefs.rugby
+          password: ${{ secrets.FTP_DEPLOY_PW }}
+          port: 21
+          local-dir: website/dist/sirrs-website/
