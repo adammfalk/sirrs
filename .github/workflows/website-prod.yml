@@ -31,9 +31,6 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install
-        run: yarn install
-
       - name: Website install
         run: yarn run website-install
 
@@ -41,6 +38,8 @@ jobs:
         if: success()
         run: yarn run website-build
 
+      - name: tst
+        run: cd website&& dir
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
