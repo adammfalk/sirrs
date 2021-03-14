@@ -18,7 +18,7 @@ export const routes: Routes = [
   { path: paths.home, component: HomeComponent },
   { path: paths.covidInfo, component: CovidInfoComponent },
   { path: paths.assignments, component: AssignmentsComponent },
-  //{ path: paths.fees, component: FeesComponent },
+  { path: paths.fees, component: FeesComponent },
   //{ path: paths.directory, component: DirectoryComponent },
   //{ path: paths.matchReports, component: MatchReportsComponent },
   { path: paths.officers, component: OfficersComponent },
