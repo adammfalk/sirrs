@@ -17,7 +17,7 @@ function createPdf(src, out) {
         cssPath: './style.css',
         remarkable: {
             //linkify: true,
-        }
+        },
     })
         .from(src)
         .to(out, function () {
