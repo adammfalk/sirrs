@@ -5,6 +5,9 @@
   "author": "Adam Falk <adammfalk@gmail.com>",
   "license": "ACSL",
   "dependencies": {
-    "markdown-pdf": "^10.0.0"
+    "md-to-pdf": "^3.3.2"
+  },
+  "scripts": {
+    "bylaws": "md-to-pdf ./bylaws/bylaws.md && mv ./bylaws/bylaws.pdf ../website/src/assets"
   }
 }

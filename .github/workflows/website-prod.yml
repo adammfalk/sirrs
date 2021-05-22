@@ -31,6 +31,12 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Docs installs
+        run: yarn run docs-install
+
+      - name: Docs run
+        run: yarn run bylaws
+
       - name: Website install
         run: yarn run website-install
 
