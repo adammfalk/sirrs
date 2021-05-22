@@ -44,6 +44,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# these are to be built by a separate process pre-deployment
-/src/assets/docs
