@@ -8,6 +8,7 @@
     "md-to-pdf": "^3.3.2"
   },
   "scripts": {
+    "build:docs": "yarn run bylaws",
     "bylaws": "md-to-pdf ./bylaws/bylaws.md && mv ./bylaws/bylaws.pdf ../website/src/assets"
   }
 }
