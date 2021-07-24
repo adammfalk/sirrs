@@ -10,7 +10,6 @@
     "website-build-ghp": "cd website && yarn run build:ghp",
     "website-build": "cd website && yarn build:prod",
     "website-test": "cd website && yarn run test:ci",
-    "docs-install": "cd society-docs && yarn install",
-    "docs-build": "cd society-docs && yarn run build:docs"
+    "docs-build": "cd society-docs && yarn install && yarn run build:docs"
   }
 }
