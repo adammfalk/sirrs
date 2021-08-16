@@ -8,7 +8,7 @@ import { DirectoryComponent } from './directory/directory.component';
 import { HomeComponent } from './home/home.component';
 import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { OfficersComponent } from './officers/officers.component';
-import { ResourcesComponent } from './resources/resources.component';
+import { ClubResourcesComponent } from './club-resources/club-resources.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CovidInfoComponent } from './covid-info/covid-info.component';
@@ -23,7 +23,7 @@ export const routes: Routes = [
   //{ path: paths.matchReports, component: MatchReportsComponent },
   { path: paths.officers, component: OfficersComponent },
   { path: paths.refereeResources, component: RefereeResourcesComponent },
-  { path: paths.resources, component: ResourcesComponent },
+  { path: paths.clubResources, component: ClubResourcesComponent },
   //{ path: paths.societyInformation, component: SocietyInformationComponent },
   { path: paths.empty, redirectTo: path(paths.home), pathMatch: 'full' },
   // TODO: smart 404? https://medium.com/angular-in-depth/angular-smart-404-page-85a45b109fd8

@@ -15,11 +15,17 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import {
+  GoogleLoginProvider,
+  FacebookLoginProvider,
+  SocialAuthServiceConfig,
+  SocialLoginModule
+} from 'angularx-social-login';
+
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
-import { ResourcesComponent } from './resources/resources.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { OfficersComponent } from './officers/officers.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';
@@ -29,6 +35,7 @@ import { FeesComponent } from './fees/fees.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CovidInfoComponent } from './covid-info/covid-info.component';
 import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
+import { ClubResourcesComponent } from './club-resources/club-resources.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,6 @@ import { RefereeResourcesComponent } from './referee-resources/referee-resources
     NavbarComponent,
     FooterComponent,
     ContentComponent,
-    ResourcesComponent,
     AssignmentsComponent,
     OfficersComponent,
     SocietyInformationComponent,
@@ -46,7 +52,8 @@ import { RefereeResourcesComponent } from './referee-resources/referee-resources
     FeesComponent,
     NotFoundComponent,
     CovidInfoComponent,
-    RefereeResourcesComponent
+    RefereeResourcesComponent,
+    ClubResourcesComponent
   ],
   imports: [
     BrowserModule,
@@ -60,9 +67,25 @@ import { RefereeResourcesComponent } from './referee-resources/referee-resources
     MatListModule,
     MatMenuModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '143887419517-ipum49viv2m18fbh52ioes63e4vd5g59.apps.googleusercontent.com'
+            )
+          }
+        ]
+      } as SocialAuthServiceConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
