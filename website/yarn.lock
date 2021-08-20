@@ -1552,6 +1552,13 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+angularx-social-login@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/angularx-social-login/-/angularx-social-login-3.2.0.tgz#b99b5b1015386d65b2db5f5861382a8a75a8e87c"
+  integrity sha512-/maYhxqk8WyrlCiiW6A1/Fc6z5xoLdh64v4bYDO9qWdRFH9CP6r0cBdPqMIrrDg5F0a0vyKY/2neWmnvJrLnXg==
+  dependencies:
+    tslib "^2.0.0"
+
 ansi-colors@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
