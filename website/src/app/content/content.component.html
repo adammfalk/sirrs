@@ -5,15 +5,15 @@
       <a mat-list-item routerLink="/home" (click)="closeNav()">
         <mat-icon>home</mat-icon><span class="nav-item">Home</span>
       </a>
-      <a mat-list-item routerLink="/covid-info" (click)="closeNav()" style="color: red;">
-        <mat-icon>coronavirus</mat-icon><span class="nav-item">COVID-19 Information</span>
+      <a mat-list-item [matMenuTriggerFor]="resources">
+        <mat-icon>room_service</mat-icon><span class="nav-item">Club &#38; Referee Resources</span>
       </a>
       <a mat-list-item routerLink="/assignments" (click)="closeNav()">
         <mat-icon>assignment</mat-icon><span class="nav-item">Assignments</span>
       </a>
-      <!--<a mat-list-item routerLink="/directory" (click)="closeNav()">
-                <mat-icon>contact_page</mat-icon><span class="nav-item">Directory</span>
-            </a>-->
+      <a mat-list-item routerLink="/directory" (click)="closeNav()">
+        <mat-icon>contact_page</mat-icon><span class="nav-item">Directory</span>
+      </a>
       <a mat-list-item routerLink="/fees" (click)="closeNav()">
         <mat-icon>paid</mat-icon><span class="nav-item">Fees</span>
       </a>
@@ -22,9 +22,6 @@
             </a>-->
       <a mat-list-item target="_blank" href="https://www.steamrollerrugby.com/society-iowa-rugby-referees/">
         <mat-icon>storefront</mat-icon><span class="nav-item">Society Kit</span>
-      </a>
-      <a mat-list-item [matMenuTriggerFor]="resources">
-        <mat-icon>room_service</mat-icon><span class="nav-item">Resources</span>
       </a>
       <a mat-list-item [matMenuTriggerFor]="societyInfo">
         <mat-icon>info</mat-icon><span class="nav-item">Society Information</span>
@@ -42,11 +39,11 @@
       </a>
     </mat-menu>
     <mat-menu #resources="matMenu" xPosition="before">
-      <a mat-menu-item (click)="closeNav()" routerLink="/referee-resources">
-        <mat-icon>sports</mat-icon><span class="nav-item">Referees</span>
-      </a>
       <a mat-menu-item (click)="closeNav()" routerLink="/club-resources">
         <mat-icon>sports_rugby</mat-icon><span class="nav-item">Clubs</span>
+      </a>
+      <a mat-menu-item (click)="closeNav()" routerLink="/referee-resources">
+        <mat-icon>sports</mat-icon><span class="nav-item">Referees</span>
       </a>
     </mat-menu>
     <mat-menu #societyInfo="matMenu" xPosition="before">

@@ -11,15 +11,13 @@ import { OfficersComponent } from './officers/officers.component';
 import { ClubResourcesComponent } from './club-resources/club-resources.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { CovidInfoComponent } from './covid-info/covid-info.component';
 import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
 
 export const routes: Routes = [
   { path: paths.home, component: HomeComponent },
-  { path: paths.covidInfo, component: CovidInfoComponent },
   { path: paths.assignments, component: AssignmentsComponent },
   { path: paths.fees, component: FeesComponent },
-  //{ path: paths.directory, component: DirectoryComponent },
+  { path: paths.directory, component: DirectoryComponent },
   //{ path: paths.matchReports, component: MatchReportsComponent },
   { path: paths.officers, component: OfficersComponent },
   { path: paths.refereeResources, component: RefereeResourcesComponent },

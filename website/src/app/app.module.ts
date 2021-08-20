@@ -33,7 +33,6 @@ import { DirectoryComponent } from './directory/directory.component';
 import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { FeesComponent } from './fees/fees.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { CovidInfoComponent } from './covid-info/covid-info.component';
 import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
 import { ClubResourcesComponent } from './club-resources/club-resources.component';
 
@@ -51,7 +50,6 @@ import { ClubResourcesComponent } from './club-resources/club-resources.componen
     MatchReportsComponent,
     FeesComponent,
     NotFoundComponent,
-    CovidInfoComponent,
     RefereeResourcesComponent,
     ClubResourcesComponent
   ],

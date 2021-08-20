@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RefInfo, Refs } from '../ref-info';
+
 
 @Component({
   selector: 'app-directory',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryComponent implements OnInit {
 
-  constructor() { }
+  constructor () { }
 
   ngOnInit(): void {
   }
 
+  refs: RefInfo[] = Refs;
 }
