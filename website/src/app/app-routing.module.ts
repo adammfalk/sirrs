@@ -6,7 +6,6 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { FeesComponent } from './fees/fees.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { HomeComponent } from './home/home.component';
-import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { OfficersComponent } from './officers/officers.component';
 import { ClubResourcesComponent } from './club-resources/club-resources.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';

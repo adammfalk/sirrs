@@ -30,11 +30,13 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { OfficersComponent } from './officers/officers.component';
 import { SocietyInformationComponent } from './society-information/society-information.component';
 import { DirectoryComponent } from './directory/directory.component';
-import { MatchReportsComponent } from './match-reports/match-reports.component';
 import { FeesComponent } from './fees/fees.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
 import { ClubResourcesComponent } from './club-resources/club-resources.component';
+import { ReimbursementRequestComponent } from './reimbursement-request/reimbursement-request.component';
+import { MatchReportComponent } from './match-report/match-report.component';
+import { RefereeReportComponent } from './referee-report/referee-report.component';
 
 @NgModule({
   declarations: [
@@ -47,11 +49,14 @@ import { ClubResourcesComponent } from './club-resources/club-resources.componen
     OfficersComponent,
     SocietyInformationComponent,
     DirectoryComponent,
-    MatchReportsComponent,
+    MatchReportComponent,
     FeesComponent,
     NotFoundComponent,
     RefereeResourcesComponent,
-    ClubResourcesComponent
+    ClubResourcesComponent,
+    ReimbursementRequestComponent,
+    MatchReportComponent,
+    RefereeReportComponent
   ],
   imports: [
     BrowserModule,
