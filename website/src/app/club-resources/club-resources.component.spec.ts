@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ClubResourcesComponent } from './club-resources.component';
 
 describe('ClubResourcesComponent', () => {
@@ -8,9 +7,9 @@ describe('ClubResourcesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClubResourcesComponent ]
+      declarations: [ClubResourcesComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
