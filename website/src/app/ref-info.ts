@@ -21,4 +21,6 @@ export const Refs: RefInfo[] = [
   new RefInfo('Paul Damge', 'pdamge3@gmail.com', 'Des Moines'),
   new RefInfo('Paul Wood', 'pwreferee@hotmail.com', 'Cedar Rapids'),
   new RefInfo('Zeus Ramirez', 'bigzeus01@gmail.com', 'Waterloo'),
+  new RefInfo('Tyler Dailey', 'tyler.a.dailey@gmail.com', 'Iowa City'),
+  new RefInfo('Bryant Reynolds', 'breyn06@gmail.com', 'Des Moines')
 ];
