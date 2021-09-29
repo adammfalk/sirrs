@@ -22,5 +22,12 @@ export const Refs: RefInfo[] = [
   new RefInfo('Paul Wood', 'pwreferee@hotmail.com', 'Cedar Rapids'),
   new RefInfo('Zeus Ramirez', 'bigzeus01@gmail.com', 'Waterloo'),
   new RefInfo('Tyler Dailey', 'tyler.a.dailey@gmail.com', 'Iowa City'),
-  new RefInfo('Bryant Reynolds', 'breyn06@gmail.com', 'Des Moines')
+  new RefInfo('Bryant Reynolds', 'breyn06@gmail.com', 'Des Moines'),
+  new RefInfo('Jeremiah Johnson', 'jeremiahkjohnson@gmail.com', 'Des Moines'),
+  new RefInfo('Jeremy Beswick', 'jeremybeswick@ymail.com', 'Clinton'),
+  new RefInfo('Jeff McHenry', 'rugbymchenry@hotmail.com', 'Des Moines'),
+  new RefInfo('Brian Coopman','brian.coopman@gmail.com','Quad Cities-ish (IL)'),
+  new RefInfo('Joe Lippert','rugbyjoe10@gmail.com','Fort Dodge'),
+  new RefInfo('Adam Simiele','adamsimiele@gmail.com','Decorah'),
+  new RefInfo('Matt Simon','matt.simon.52101@gmail.com','Decorah')
 ];
