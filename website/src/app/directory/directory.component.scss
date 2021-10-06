@@ -54,6 +54,10 @@ th {
   text-align: center;
 }
 
+.flex-table-row {
+  border: solid 2px;
+}
+
 @media only screen and (max-width: 767px) {
   .table-container th,
   td {

@@ -4,14 +4,14 @@
     <tr class="flex-table-header" role="rowgroup">
       <th class="flex-row first" role="columnheader">Name</th>
       <th class="flex-row" role="columnheader">Email</th>
-      <th class="flex-row" role="columnheader">City</th>
+      <!--<th class="flex-row" role="columnheader">City</th>-->
     </tr>
   </thead>
   <tbody>
     <tr class="flex-table-row" role="rolegroup" *ngFor="let ref of refs">
       <td class="flex-row first" role="cell">{{ref.name}}</td>
       <td class="flex-row" role="cell"><a href="mailto:{{ref.email}}">{{ref.email}}</a></td>
-      <td class="flex-row" role="cell">{{ref.city}}</td>
+      <!--<td class="flex-row" role="cell">{{ref.city}}</td>-->
     </tr>
   </tbody>
 
