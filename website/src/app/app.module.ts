@@ -35,6 +35,7 @@ import { FeesComponent } from './fees/fees.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
 import { ClubResourcesComponent } from './club-resources/club-resources.component';
+import { InterestedComponent } from './interested/interested.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ClubResourcesComponent } from './club-resources/club-resources.componen
     FeesComponent,
     NotFoundComponent,
     RefereeResourcesComponent,
-    ClubResourcesComponent
+    ClubResourcesComponent,
+    InterestedComponent
   ],
   imports: [
     BrowserModule,
