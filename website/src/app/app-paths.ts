@@ -9,6 +9,9 @@ export const paths = {
   refereeResources: 'referee-resources',
   clubResources: 'club-resources',
   societyInformation: 'society-information',
+  interested: 'become-a-rugby-referee',
+  refereeRugby: 'referee-rugby',
+  joinUs: 'join-us',
   empty: ''
 };
 

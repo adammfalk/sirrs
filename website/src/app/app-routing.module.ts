@@ -12,6 +12,7 @@ import { ClubResourcesComponent } from './club-resources/club-resources.componen
 import { SocietyInformationComponent } from './society-information/society-information.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RefereeResourcesComponent } from './referee-resources/referee-resources.component';
+import { InterestedComponent } from './interested/interested.component';
 
 export const routes: Routes = [
   { path: paths.home, component: HomeComponent },
@@ -23,6 +24,9 @@ export const routes: Routes = [
   { path: paths.refereeResources, component: RefereeResourcesComponent },
   { path: paths.clubResources, component: ClubResourcesComponent },
   //{ path: paths.societyInformation, component: SocietyInformationComponent },
+  { path: paths.interested, component: InterestedComponent },
+  { path: paths.refereeRugby, redirectTo: path(paths.interested), pathMatch: 'full' },
+  { path: paths.joinUs, redirectTo: path(paths.interested), pathMatch: 'full' },
   { path: paths.empty, redirectTo: path(paths.home), pathMatch: 'full' },
   // TODO: smart 404? https://medium.com/angular-in-depth/angular-smart-404-page-85a45b109fd8
   { path: '**', component: NotFoundComponent }
