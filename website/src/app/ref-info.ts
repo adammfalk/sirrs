@@ -30,6 +30,7 @@ const refList: RefInfo[] = [
   new RefInfo('Randy Kiburz', 'rkiburz9@outlook.com', 'Cedar Rapids'),
   new RefInfo('Zeus Ramirez', 'bigzeus01@gmail.com', 'Waterloo'),
   new RefInfo('Tyler Dailey', 'tyler.a.dailey@gmail.com', 'Iowa City'),
+  new RefInfo('Michael Klostermann', 'hawkeyerugby@gmail.com', 'Quad Cities'),
 ];
 
 export const Refs: RefInfo[] =
