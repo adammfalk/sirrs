@@ -18,6 +18,7 @@ const refList: RefInfo[] = [
   new RefInfo('Brian Coopman', 'brian.coopman@gmail.com', 'Quad Cities-ish (IL)'),
   new RefInfo('Bryant Reynolds', 'breyn06@gmail.com', 'Des Moines'),
   new RefInfo('Casey Hansen', 'chansen3215@gmail.com', 'Waverly'),
+  new RefInfo('Chad Proctor', 'cproctor319@gmail.com', 'Cedar Rapids'),
   new RefInfo('Chris Karamitros', 'CMK.aramitros@gmail.com', 'Cedar Rapids'),
   new RefInfo('Eddy Tapia', 'tapia.eddy92@gmail.com', 'Des Moines'),
   new RefInfo('James Gadient', 'jamesgadient@gmail.com', 'Cedar Rapids'),
