@@ -42,6 +42,7 @@ const refList: RefInfo[] = [
   new RefInfo('Paul Damge', 'pdamge3@gmail.com', 'Des Moines'),
   new RefInfo('Paul Wood', 'pwreferee@hotmail.com', 'Cedar Rapids'),
   new RefInfo('Randy Kiburz', 'rkiburz9@outlook.com', 'Cedar Rapids'),
+  new RefInfo('Riley McCormick', 'rimcc22@gmail.com', 'Davenport-Palmer'),
   new RefInfo('Tyler Dailey', 'tyler.a.dailey@gmail.com', 'Iowa City'),
   new RefInfo('Zeus Ramirez', 'bigzeus01@gmail.com', 'Waterloo'),
 ];
