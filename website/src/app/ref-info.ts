@@ -34,7 +34,7 @@ const refList: RefInfo[] = [
   new RefInfo('Jeremy Beswick', 'jeremybeswick@ymail.com', 'Clinton'),
   new RefInfo('Joe Lippert', 'rugbyjoe10@gmail.com', 'Fort Dodge'),
   new RefInfo('Joe Long', 'thecyclingsir@gmail.com', 'Lincoln, NE'),
-  new RefInfo('Justin Johnson', 'jujohn03', 'Omaha, NE'),
+  new RefInfo('Justin Johnson', 'jujohn03@gmail.com', 'Omaha, NE'),
   new RefInfo('Marc Blong', 'marcblong@yahoo.com', 'Mason City'),
   new RefInfo('Matt Ragan', 'matthew.ragan@abcsupply.com', 'Quad Cities'),
   new RefInfo('Mathew Rico', 'mathewrico225@gmail.com', 'Souix Falls'),
