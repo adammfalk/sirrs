@@ -12,7 +12,7 @@ export class RefInfo {
 };
 
 const refList: RefInfo[] = [
-  new RefInfo('Aaron Alviar', 'clintonrugby10@gmail.com', 'Cedar Rapids'),
+  new RefInfo('Aaron Alviar', 'clintonrugby10@gmail.com', 'Clinton'),
   new RefInfo('Adam Falk', 'adammfalk@gmail.com', 'Des Moines'),
   new RefInfo('Adam Simiele', 'adamsimiele@gmail.com', 'Decorah'),
   new RefInfo('Brian Coopman', 'brian.coopman@gmail.com', 'Quad Cities-ish (IL)'),
@@ -26,6 +26,7 @@ const refList: RefInfo[] = [
   new RefInfo('Dave Carter', 'dave@rockriverservice.com', 'Rockford, IL'),
   new RefInfo('David Randall', 'randadac@uni.edu', 'Cedar Falls'),
   new RefInfo('Dean Hahn', 'dean_hahn@hotmail.com', 'Clinton'),
+  new RefInfo('Don LeRoux', 'lerouxof3@gmail.com', 'Moline, IL'),
   new RefInfo('Eddy Tapia', 'tapia.eddy92@gmail.com', 'Des Moines'),
   new RefInfo('James Gadient', 'jamesgadient@gmail.com', 'Cedar Rapids'),
   new RefInfo('Jared Scherrman', 'jpwarriors15@gmail.com', 'Iowa City'),
@@ -34,6 +35,7 @@ const refList: RefInfo[] = [
   new RefInfo('Jeremy Beswick', 'jeremybeswick@ymail.com', 'Clinton'),
   new RefInfo('Joe Lippert', 'rugbyjoe10@gmail.com', 'Fort Dodge'),
   new RefInfo('Joe Long', 'thecyclingsir@gmail.com', 'Lincoln, NE'),
+  new RefInfo('Justin Clarke', 'justinmbrothers@gmail.com', 'Cedar Rapids'),
   new RefInfo('Justin Johnson', 'jujohn03@gmail.com', 'Omaha, NE'),
   new RefInfo('Marc Blong', 'marcblong@yahoo.com', 'Mason City'),
   new RefInfo('Matt Ragan', 'matthew.ragan@abcsupply.com', 'Quad Cities'),
@@ -43,6 +45,7 @@ const refList: RefInfo[] = [
   new RefInfo('Milton Audas', 'milton.audas@gmail.com', 'Muscatine'),
   new RefInfo('Paul Damge', 'pdamge3@gmail.com', 'Des Moines'),
   new RefInfo('Paul Wood', 'pwreferee@hotmail.com', 'Cedar Rapids'),
+  new RefInfo('Pauldo Musa', 'dynastiemusa@gmail.com', 'Waterloo'),
   new RefInfo('Randy Kiburz', 'rkiburz9@outlook.com', 'Cedar Rapids'),
   new RefInfo('Riley McCormick', 'rimcc22@gmail.com', 'Davenport-Palmer'),
   new RefInfo('Tyler Dailey', 'tyler.a.dailey@gmail.com', 'Iowa City'),
