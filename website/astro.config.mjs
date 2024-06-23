@@ -4,7 +4,6 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://adammfalk.github.io/sirrs/',
-  base: 'sirrs',
   integrations: [
     starlight({
       title: 'Society of Iowa Rugby Refs',
