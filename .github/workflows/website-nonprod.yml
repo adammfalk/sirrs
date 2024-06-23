@@ -19,4 +19,15 @@ jobs:
         with:
           node-version: '20'
 
-      # - name: Website install
+      - name: Website build
+        run: |
+          cd website
+          npm install
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          folder: website/dist
