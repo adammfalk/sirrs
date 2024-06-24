@@ -11,6 +11,10 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  SITE: https://adammfalk.github.io/
+  BASE: sirrs
+
 jobs:
   build:
     runs-on: ubuntu-latest
