@@ -9,6 +9,10 @@ export default defineConfig({
     starlight({
       title: 'Society of Iowa Rugby Refs',
       favicon: 'favicon.ico',
+      logo: {
+        light: './src/assets/seal.png',
+        dark: './src/assets/seal-w.png',
+      },
       social: {
         facebook: 'https://www.facebook.com/iowarugbyrefs',
       },
