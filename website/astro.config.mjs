@@ -3,8 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://adammfalk.github.io/',
-  base: 'sirrs',
+  site: process.env.SITE ? process.env.SITE : undefined,
+  base: process.env.BASE ? process.env.BASE : undefined,
   integrations: [
     starlight({
       title: 'Society of Iowa Rugby Refs',
