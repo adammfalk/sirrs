@@ -70,7 +70,7 @@ export default defineConfig({
                   ]
                 },
                 { label: '7s', link: '/referee-resources/continuing-education/7s', },
-                { label: 'AR', link: '/referee-resources/continuing-education/ar', },
+                { label: 'Assistant Refereeing', link: '/referee-resources/continuing-education/ar', },
                 { label: 'Contextual Refereeing', link: '/referee-resources/continuing-education/contextual-refereeing', },
               ]
             },
