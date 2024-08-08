@@ -27,4 +27,4 @@ jobs:
           server: ftp.iowarefs.rugby
           username: deploye@iowarefs.rugby
           password: ${{ secrets.FTP_DEPLOY_PW }}
-          local-dir: website/dist
+          local-dir: website/dist/
