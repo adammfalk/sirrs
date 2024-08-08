@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "name": "society-docs",
+      "path": "society-docs"
+    },
+    {
+      "name": "website",
+      "path": "website"
+    }
+  ]
+}

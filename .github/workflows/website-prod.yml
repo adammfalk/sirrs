@@ -5,6 +5,9 @@ on:
     types:
       - published
 
+env:
+  SITE: https://iowarefs.rugby/
+
 jobs:
   release:
     name: Build and release
@@ -18,10 +21,10 @@ jobs:
         with:
           node-version: '20'
 
-      # - name: FTP-Deploy-Action
-      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      #   with:
-      #     server: ftp.iowarefs.rugby
-      #     username: deploye@iowarefs.rugby
-      #     password: ${{ secrets.FTP_DEPLOY_PW }}
-      #     local-dir: website/dist/sirrs-website/
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.iowarefs.rugby
+          username: deploye@iowarefs.rugby
+          password: ${{ secrets.FTP_DEPLOY_PW }}
+          local-dir: website/dist
