@@ -21,6 +21,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Build site
+        run: |
+          cd website
+          npm run build
+
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
