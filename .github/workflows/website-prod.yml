@@ -5,6 +5,9 @@ on:
     types:
       - published
 
+env:
+  SITE: https://iowarefs.rugby/
+
 jobs:
   release:
     name: Build and release
