@@ -48,6 +48,7 @@ export default defineConfig({
             { label: 'USA Rugby Resources', link: '/referee-resources/usa-rugby-resources', },
             {
               label: 'Continuing Eduction', items: [
+                { label: 'Head Contact Process', link: '/referee-resources/continuing-education/head-contact-process', },
                 { label: 'Positioning', link: '/referee-resources/continuing-education/positioning', },
                 {
                   label: 'Tackle/Ruck',
@@ -69,7 +70,6 @@ export default defineConfig({
                     { label: 'Shapes', link: '/referee-resources/continuing-education/scrum/shapes', },
                   ]
                 },
-                { label: 'Head Contact Process', link: '/referee-resources/continuing-education/head-contact-process', },
                 { label: '7s', link: '/referee-resources/continuing-education/7s', },
                 { label: 'Assistant Refereeing', link: '/referee-resources/continuing-education/ar', },
                 { label: 'Contextual Refereeing', link: '/referee-resources/continuing-education/contextual-refereeing', },
