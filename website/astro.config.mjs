@@ -48,6 +48,7 @@ export default defineConfig({
             { label: 'USA Rugby Resources', link: '/referee-resources/usa-rugby-resources', },
             {
               label: 'Continuing Eduction', items: [
+                { label: 'Head Contact Process', link: '/referee-resources/continuing-education/head-contact-process', },
                 { label: 'Positioning', link: '/referee-resources/continuing-education/positioning', },
                 {
                   label: 'Tackle/Ruck',

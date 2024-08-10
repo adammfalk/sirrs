@@ -23,9 +23,8 @@ jobs:
 
       - name: Build site
         run: |
-          cd website
-          npm install
-          npm run build
+          npm run website-install
+          npm run website-build
 
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
