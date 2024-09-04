@@ -38,3 +38,15 @@ Report any yellow or red cards for Midwest sanctioned senior competition <a href
 ## High School (IAYRA) competitions
 
 Red cards must be reported in the high school leagues. These are reported when filling out the <a href='https://forms.gle/2gQSzEXYm3VXvDht9' target='_blank'>Score Report/Payment form</a>.
+
+## Competition specific discipline contacts
+
+Given rugby teams in Iowa play in an assortment of competitions, their governing body and discipline reporting paths are fluid. Generally, referees don't need to concern themselves with this aspect, but this information is being published here for reference.
+
+| Competition      | Governing body                  | Teams                                                                     | Reporting mode          | Contact                                                                       | Report YC? | Report RC |
+| ---------------- | ------------------------------- | ------------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------- | ---------- | --------- |
+| Midwest          | Midwest Rugby Union - USA Rugby | Senior club                                                               | RefUp Discipline Report | Erin Detterbeck (Iowa DO)                                                     | Y          | Y         |
+| Big Rivers       | NCR                             | Iowa Central Comm. College                                                | Manual                  | Brad Dufek; Justin Whitton                                                    | N          | Y         |
+| Great Midwest    | NCR                             | Univ Northern Iowa (men)                                                  | RefUp Discipline Report | Todd Streeter                                                                 | Y          | Y         |
+| Midwest          | NCR                             | Univ Norther Iowa (women); Univ of Iowa (women); Iowa State Univ (women); | RefUp Discipline Report | Amity Beiner                                                                  | Y          | Y         |
+| Heart of America | Heart of America - USA Rugby    | Univ of Iowa (men); Iowa State Univ (men);                                | RefUp Discipline Report | Sean Cox (MARFU); Erin Detterbeck (Iowa); ??? (Minn); Bill Sexton (HoA Comm); | N          | Y         |
