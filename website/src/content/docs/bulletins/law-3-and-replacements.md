@@ -61,7 +61,7 @@ The following indicates whether a team who cannot field a suitably trained front
       <td rowspan="1">Red card</td>
     </tr>
     <tr>
-      <td rowspan="6" style="background-color: lightblue;"><strong>FIRST EVENT</strong></td>
+      <td rowspan="6" style="background-color: lightblue;text-align: center;"><strong>FIRST EVENT</strong></td>
       <td>Foul play injury</td>
       <td>NO</td>
       <td>NO</td>
