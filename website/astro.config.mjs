@@ -38,6 +38,12 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Bulletins',
+          items: [
+            { label: 'Law 3 and Replacements', link: '/bulletins/law-3-and-replacements', },
+          ]
+        },
+        {
           label: 'Referee Resources',
           items: [
             { label: 'Register', link: '/referee-resources/register', },
