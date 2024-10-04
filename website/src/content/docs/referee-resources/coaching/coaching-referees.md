@@ -19,6 +19,7 @@ You can also find some general information on practical coaching of referees her
   - Either day-of or in the proceeding days after the match, make time to have a chat with the referee about your observations.
 - Complete a report, share it with the referee, and post it to the repository
   - The report template and repository are <a href='https://drive.google.com/drive/folders/1Bj4w_p_EmoZOytCzThSfZhc1nSx3XGdD' target='_blank'>here</a>.
+- Coaches are paid a coaching fee via RefUp, similarly to referees. A payment destination must be configured in RefUp to get paid.
 
 # Coaching philosophy
 
