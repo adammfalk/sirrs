@@ -82,6 +82,13 @@ export default defineConfig({
                 { label: 'Contextual Refereeing', link: '/referee-resources/continuing-education/contextual-refereeing', },
               ]
             },
+            {
+              label: 'Coaching', items: [
+                { label: 'Coaching Overview', link: '/referee-resources/coaching/coaching-overview', },
+                { label: 'Being Coached', link: '/referee-resources/coaching/being-coached', },
+                { label: 'Coaching Referees', link: '/referee-resources/coaching/coaching-referees', },
+              ]
+            }
           ]
         },
         {
