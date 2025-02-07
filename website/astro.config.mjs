@@ -40,6 +40,7 @@ export default defineConfig({
         {
           label: 'Bulletins',
           items: [
+            { label: 'January 2025 Law Trials', link: '/bulletins/january-2025-law-trials' },
             { label: 'Law 3 and Replacements', link: '/bulletins/law-3-and-replacements', },
           ]
         },
