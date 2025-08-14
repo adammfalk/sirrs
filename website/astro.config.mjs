@@ -13,9 +13,9 @@ export default defineConfig({
         light: './src/assets/seal.png',
         dark: './src/assets/seal-w.png',
       },
-      social: {
-        facebook: 'https://www.facebook.com/iowarugbyrefs',
-      },
+      social: [
+        { icon: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/iowarugbyrefs' },
+      ],
       sidebar: [
         {
           label: 'Assignments',
