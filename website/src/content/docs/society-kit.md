@@ -15,7 +15,7 @@ Well...most of it...
 
 Our prior kit colorways were pink and green. With WRS, we've combined them into a <a href='https://www.worldrugbyshop.com/collections/society-of-iowa-rugby-referees/products/mens-oxford-reversible-2' target='_blank'>reversible jersey</a>.
 
-We also have a <href='https://www.worldrugbyshop.com/collections/society-of-iowa-rugby-referees/products/mens-oxford-reversible-3' target='\_blank'>second reversible option</a> of white and orange.
+We also have a <a href='https://www.worldrugbyshop.com/collections/society-of-iowa-rugby-referees/products/mens-oxford-reversible-3' target='_blank'>second reversible option</a> of white and orange.
 
 ### Shorts
 
