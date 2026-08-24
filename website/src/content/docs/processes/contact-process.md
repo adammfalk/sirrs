@@ -3,7 +3,7 @@ title: Contact Process
 description: When, how, and what to contact the referee about
 ---
 
-The primary and preferred communication method should be email. RefUp provides an easy way to email your referee(s) once they're assigned. See their <a href='https://refup.freshdesk.com/support/solutions/articles/44001787764-contacting-officials' target='_blank'>documentation</a> for details.
+The primary and preferred communication method should be email. RefUp provides an easy way to email your referee(s) once they're assigned. See their <a href='https://docs.refup.io/teams/contacting-officials' target='_blank'>documentation</a> for details.
 
 In situations where RefUp is not being used, communication will run through the Society contact.
 
