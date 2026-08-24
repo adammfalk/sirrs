@@ -15,7 +15,7 @@ It is the responsibility of the host/scheduling team to keep logistic informatio
 Requests must be built by the host club/organization at least 3 weeks in advance of the event. Failure to do so may result in the event being unstaffed.
 :::
 
-Requests for a referee start in RefUp. Use their <a href="https://refup.freshdesk.com/support/solutions/articles/44001292543-making-your-first-bid" target="_blank">help article</a> for guidance.
+Requests for a referee start in RefUp. Use their <a href='https://docs.refup.io/teams/making-your-first-bid" target="_blank'>help article</a> for guidance.
 
 Be sure to select `Match` for a 15's match or `Tournament` for a 7's or 10's tournament. If you are hosting multiple 15s matches but not in a tournament (like a triangular), please use `Tournament`.
 
