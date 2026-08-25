@@ -27,7 +27,7 @@ jobs:
           npm run website-build
 
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ftp.iowarefs.rugby
           username: deploye@iowarefs.rugby
