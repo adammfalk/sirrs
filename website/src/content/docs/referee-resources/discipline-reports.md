@@ -41,6 +41,8 @@ Midwest Discipline info is <a href='https://midwest.rugby/compliance-discipline/
 
 Red cards must be reported in the high school leagues. These are reported when filling out the <a href='https://forms.gle/2gQSzEXYm3VXvDht9' target='_blank'>Score Report/Payment form</a>.
 
+IAYRA Discipline info is <a href='https://rugbyiowa.org/disciplinary'>here</a>.
+
 ## Competition specific discipline contacts
 
 Given rugby teams in Iowa play in an assortment of competitions, their governing body and discipline reporting paths are fluid. Generally, referees don't need to concern themselves with this aspect, but this information is being published here for reference.
